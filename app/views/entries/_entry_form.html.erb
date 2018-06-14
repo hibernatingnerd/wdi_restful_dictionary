@@ -1,0 +1,15 @@
+
+<%= form_for entry do |f| %>
+
+  <%= f.label :word %>
+  <%= f.text_field :word %>
+
+  <%= f.label :definition %>
+  <%= f.text_area :definition %>
+
+  <%= f.label :language %>
+  <%= f.text_field :language %>
+
+  <%= f.submit %>
+
+<% end %>

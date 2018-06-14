@@ -1,1 +1,9 @@
 <h1>the index page</h1>
+
+<h1>Add a new word</h1>
+<%= link_to 'New Word', new_entry_path %>
+<% @entries.each do |entry| %>
+<h2>
+  <%= link_to entry.word, entry_path(entry) %>
+</h2>
+<% end %>
